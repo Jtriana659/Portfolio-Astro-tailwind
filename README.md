@@ -28,6 +28,45 @@ Inside of your Astro project, you'll see the following folders and files:
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
+# 🌐 Portafolio Profesional – Jeisson Triana
+
+Bienvenido a mi portafolio web desarrollado con **Astro** y **TailwindCSS**, donde presento mi experiencia, proyectos, tecnologías y formas de contacto.  
+Este sitio está optimizado para rendimiento, animaciones fluidas y un diseño moderno enfocado en la experiencia de usuario.
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+- **Astro** – Framework estático rápido y moderno  
+- **TailwindCSS** – Estilos utilitarios para diseño responsivo  
+- **JavaScript / TypeScript** – Lógica y componentes  
+- **HTML / Astro Components**  
+- **Íconos personalizados y assets locales**  
+- **Netlify** – (Opcional) Plataforma de despliegue  
+
+---
+
+## 📌 Secciones del sitio
+
+✔️ **Inicio**  
+✔️ **Experiencia**  
+✔️ **Skills / Tecnologías**  
+✔️ **Proyectos destacados**  
+✔️ **Certificados**  
+✔️ **Sobre mí**  
+✔️ **Formulario de contacto** (via FormSubmit)  
+
+---
+
+## 🛠️ Instalación y uso local
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/tuusuario/jeissontriana-portfolio.git
+cd jeissontriana-portfolio
+
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
