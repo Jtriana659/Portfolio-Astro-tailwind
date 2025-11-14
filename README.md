@@ -1,5 +1,4 @@
-# Astro Starter Kit: Basics
-
+# Portafolio Profesional - Astro y Tailwind
 ```sh
 npm create astro@latest -- --template basics
 ```
@@ -28,7 +27,7 @@ Inside of your Astro project, you'll see the following folders and files:
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-# 🌐 Portafolio Profesional – Jeisson Triana
+# 🌐 Portafolio Profesional
 
 Bienvenido a mi portafolio web desarrollado con **Astro** y **TailwindCSS**, donde presento mi experiencia, proyectos, tecnologías y formas de contacto.  
 Este sitio está optimizado para rendimiento, animaciones fluidas y un diseño moderno enfocado en la experiencia de usuario.
