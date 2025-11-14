@@ -1,0 +1,41 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente",
+    title: "Software Engineer Developer",
+    description: "Desarrollo y mantenimiento de aplicaciones críticas dentro del ecosistema Dynamics 365 (CRM y Customer Service) y Power Platform, asegurando la continuidad y optimización de los servicios al cliente.Creación e integración de **APIs REST** utilizando estándares modernos, con validación exhaustiva mediante Postman para garantizar la interoperabilidad entre sistemas.Implementación de soluciones de automatización empresarial mediante el desarrollo de **App Canvas** y el uso avanzado de **Power Platform**.Liderazgo en la creación y despliegue de soluciones de inteligencia conversacional (ChatBots) a través de **Copilot Studio** (antes Power Virtual Agents), mejorando la experiencia del usuario final.Participación activa en el ciclo de vida de desarrollo utilizando **Azure DevOps** para la gestión de tareas, control de versiones y despliegues.Realización de pruebas unitarias y funcionales rigurosas para asegurar la calidad del código y la estabilidad de las funcionalidades desarrolladas.",
+    tecnologiasClave:
+      "Dynamics 365 - Power Platform - JavaScript - SQL Server - MySQL - API Rest - Azure - DevOps - Copilot Studio - Power Virtual Agents - Postman - PowerApps (Canvas & Model-Driven) - SharePoint - Power Automate - Power BI",
+    link: "#",
+  },
+  {
+    date: "September 2022",
+    title: "Ingeniero DB y Aplicaciones",
+    description:
+      "Lideré el desarrollo e implementación de soluciones en el ecosistema **Microsoft Power Platform** y **Dynamics 365**, incluyendo la creación de **App Canvas** y **Model-Driven Apps**. Fui responsable de la gestión integral de datos, incluyendo la administración de servidores **SQL Server** y **MySQL**, y la creación de consultas e informes avanzados para cliente final. Coordiné equipos para el desarrollo de PowerApps y aseguré la calidad mediante pruebas unitarias y funcionales rigurosas. Además, participé en el soporte y mantenimiento de aplicaciones críticas de la compañía, utilicé **Azure DevOps** para el ciclo de desarrollo y brindé soporte y administración a la plataforma **SAP Business One**.",
+         tecnologiasClave:
+      "Dynamics 365 - Power Platform - PowerApps (Canvas & Model-Driven) - SQL Server - MySQL - SAP Business One - Azure DevOps - Crystal Reports - Power BI - SharePoint",
+    link: "#",
+  },
+  {
+    date: "August 2019",
+    title: "Asistente Sistemas y Soporte Técnico",
+    description:
+      "Proporcionar soporte técnico local y remoto a usuarios - Realizar mantenimiento preventivo y correctivo de hardware y software - Ofrecer soporte especializado a usuarios del ERP SAP Business One - Ejecutar consultas avanzadas en SQL Server para diagnóstico e informes - Administrar y gestionar la herramienta de tickets GLPI - Controlar el inventario físico y lógico de equipos - Administrar el servidor SAMBA - Generar informes y layouts personalizados utilizando Crystal Reports - Colaborar en proyectos de mejora continua de sistemas y procesos internos.",
+    tecnologiasClave:
+      "SQL Server - MySQL - Microsoft - Power Platform - SAP Business One - Dynamics 365 - Crystal Reports - GLPI - SAMBA - Hana Studio",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-300 ml-3 mb-20">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

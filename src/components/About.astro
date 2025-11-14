@@ -1,0 +1,71 @@
+---
+
+---
+
+<div class="bg-neutral-900 border border-neutral-700 rounded-2xl p-8 mb-20">
+  <p class="text-neutral-300 mb-4">
+    Soy Power Platform Developer especializado en la creación de soluciones
+    empresariales sobre Microsoft Power Platform y Dynamics 365. Cuento con
+    experiencia desarrollando aplicaciones con Power Apps, automatizaciones con
+    Power Automate, chatbots inteligentes con Copilot Studio y flujos integrados
+    con API REST.
+  </p>
+
+  <p class="text-neutral-300 mb-4">
+    Complemento mis habilidades con desarrollo en JavaScript, C#, SQL Server y
+    buenas prácticas de arquitectura, lo que me permite diseñar soluciones
+    completas que integran lógica personalizada, automatización avanzada y
+    experiencias de usuario optimizadas.
+  </p>
+
+  <p class="text-neutral-300">
+    Me apasiona construir herramientas que resuelvan problemas reales, mejoren
+    procesos y aporten eficiencia a nivel organizacional. Siempre busco crear
+    soluciones escalables, seguras y alineadas con las necesidades del cliente.
+  </p>
+
+  <button
+    id="openPopup"
+    class="mt-6 px-6 py-3 rounded-lg bg-red-500 hover:bg-red-400 text-white transition"
+  >
+    Más información
+  </button>
+</div>
+
+<!-- POPUP -->
+<div
+  id="popup"
+  class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50"
+>
+  <div
+    class="bg-neutral-900 border border-neutral-700 rounded-xl p-6 w-80 shadow-2xl"
+  >
+    <h3 class="text-lg font-bold text-white mb-2  ">Más información</h3>
+
+    <p class="text-neutral-300 text-sm mb-4">
+      También tengo experiencia en metodologías ágiles, arquitectura de
+      soluciones y automatizaciones complejas que integran múltiples sistemas.
+    </p>
+
+    <button
+      id="closePopup"
+      class="px-5 py-2 bg-red-900 hover:bg-red-200 text-white rounded-lg transition"
+    >
+      Cerrar
+    </button>
+  </div>
+</div>
+
+<script>
+  const openPopup = document.getElementById("openPopup");
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("closePopup");
+
+  if (openPopup && popup && closePopup) {
+    openPopup.addEventListener("click", () => popup.classList.remove("hidden"));
+    closePopup.addEventListener("click", () => popup.classList.add("hidden"));
+    popup.addEventListener("click", (e) => {
+      if (e.target === popup) popup.classList.add("hidden");
+    });
+  }
+</script>

@@ -1,0 +1,274 @@
+---
+import imgs from "../../public/img/certificado-microsoft.png";
+
+const CERTIFIACIONES = [
+  {
+    title: "AZ-104 Certificado Microsoft Azure Administrator",
+    description: "Microsoft",
+    imgSrc: "img/certificado-microsoft.png",
+  },
+  {
+    title:
+      "PL-200 Certificado Microsoft Power Platform Functional Consultant Associate",
+    description: "Microsoft",
+    imgSrc: "img/certificado-microsoft-2.png",
+  },
+  {
+    title: "PL-100 Certificado Microsoft Power Platform App Maker Associate",
+    description: "Microsoft",
+    imgSrc: "img/certificado-microsoft.png",
+  },
+
+  {
+    title: "PL-900 Certificado Microsoft Power Platform Fundamentals",
+    description: "Microsoft",
+    imgSrc: "img/certificado-microsoft-3.png",
+  },
+  {
+    title: "AZ-900 Certificado Microsoft azure Fundamentals",
+    description: "Microsoft",
+    imgSrc: "img/certificado-microsoft-3.png",
+  },
+
+  {
+    title: "DP-900 Certificado Microsoft Azure Data Fundamentals",
+    description: "Microsoft",
+    imgSrc: "img/certificado-microsoft-3.png",
+  },
+  {
+    title: "Scrum Foundation Professional Certification (SFPC) ",
+    description: "CertiProf",
+    imgSrc: "img/certificado-microsoft-3.png",
+  },
+];
+// Define un color rojo personalizado que se asemeje al diseño (puedes ajustarlo en tu tailwind.config.js)
+// Usaremos 'red-700' para el ícono y 'red-50' para el fondo del hover, y 'red-600' para el borde.
+const PIN_COLOR = "text-red-700";
+const HOVER_BG = "hover:bg-red-50";
+const HOVER_BORDER = "hover:border-red-600";
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8  mb-20">
+  <!-- COLUMNA Izquierda  – CERTIFICACIONES -->
+  <div>
+    <h2 class="text-1xl font-bold text-white mb-4">Certificaciones</h2>
+
+    <div class=" flex flex-col gap-4">
+      {
+        CERTIFIACIONES.map(({ title, description }, index) => (
+          <div
+            class={`
+              flex items-center p-4 rounded-lg cursor-pointer
+              border border-gray-200 bg-white/90 shadow-sm transition-all duration-200
+              ${HOVER_BG} ${HOVER_BORDER}
+              ${index === 0 ? "border-red-600 bg-red-50" : ""}
+            `}
+          >
+            <div class={`flex items-center justify-center mr-4 ${PIN_COLOR}`}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 18 17 23 15.79 13.88" />
+              </svg>
+            </div>
+
+            <div class="flex flex-col leading-tight">
+              <p class="text-sm font-semibold text-gray-800 m-0">{title}</p>
+              <p class="text-xs text-gray-500 m-0">{description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- COLUMNA Derecha – FORMACIÓN ACADÉMICA -->
+  <div>
+    <h2 class="text-1xl font-bold text-white mb-4">Formación Académica</h2>
+
+    <div class="flex flex-col gap-4">
+      <!-- CARD 1 -->
+      <div
+        class={`flex items-center p-4 rounded-lg cursor-pointer
+              border border-gray-200 bg-white/90 shadow-sm transition-all duration-200
+              ${HOVER_BG} ${HOVER_BORDER}`}
+      >
+        <div class={`flex items-center justify-center mr-4 ${PIN_COLOR}`}>
+          <!-- Icono -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-5 h-5"
+          >
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 18 17 23 15.79 13.88"
+            ></polyline>
+          </svg>
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <p class="text-sm font-semibold text-gray-800 m-0">
+            ESPECIALIZACIÓN EN DESARROLLO DE SOFTWARE
+          </p>
+          <p class="text-xs text-gray-500 m-0">Postgrado Universitario</p>
+        </div>
+      </div>
+        <!-- CARD 2 -->  <div
+        class={`flex items-center p-4 rounded-lg cursor-pointer
+              border border-gray-200 bg-white/90 shadow-sm transition-all duration-200
+              ${HOVER_BG} ${HOVER_BORDER}`}
+      >
+        <div class={`flex items-center justify-center mr-4 ${PIN_COLOR}`}>
+          <!-- Icono -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-5 h-5"
+          >
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 18 17 23 15.79 13.88"
+            ></polyline>
+          </svg>
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <p class="text-sm font-semibold text-gray-800 m-0">
+            INGENIERÍA DE SISTEMAS
+          </p>
+          <p class="text-xs text-gray-500 m-0">Pregrado Universitario</p>
+        </div>
+      </div>
+      
+      <!-- CARD 3 --> 
+         <div
+        class={`flex items-center p-4 rounded-lg cursor-pointer
+              border border-gray-200 bg-white/90 shadow-sm transition-all duration-200
+              ${HOVER_BG} ${HOVER_BORDER}`}
+      >
+        <div class={`flex items-center justify-center mr-4 ${PIN_COLOR}`}>
+          <!-- Icono -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-5 h-5"
+          >
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 18 17 23 15.79 13.88"
+            ></polyline>
+          </svg>
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <p class="text-sm font-semibold text-gray-800 m-0">
+        
+            TECNOLOGO EN DESARROLLO DE SOFTWARE
+          </p>
+          <p class="text-xs text-gray-500 m-0">Formación Tecnológica Profesional</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+
+        <div
+        class={`flex items-center p-4 rounded-lg cursor-pointer
+              border border-gray-200 bg-white/90 shadow-sm transition-all duration-200
+              ${HOVER_BG} ${HOVER_BORDER}`}
+      >
+        <div class={`flex items-center justify-center mr-4 ${PIN_COLOR}`}>
+          <!-- Icono -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-5 h-5"
+          >
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 18 17 23 15.79 13.88"
+            ></polyline>
+          </svg>
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <p class="text-sm font-semibold text-gray-800 m-0">
+             TECNOLOGÍA EN ADMINISTRACIÓN DE REDES DE CÓMPUTO
+          </p>
+          <p class="text-xs text-gray-500 m-0">Formación Tecnológica Profesional</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+
+        <div
+        class={`flex items-center p-4 rounded-lg cursor-pointer
+              border border-gray-200 bg-white/90 shadow-sm transition-all duration-200
+              ${HOVER_BG} ${HOVER_BORDER}`}
+      >
+        <div class={`flex items-center justify-center mr-4 ${PIN_COLOR}`}>
+          <!-- Icono -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-5 h-5"
+          >
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 18 17 23 15.79 13.88"
+            ></polyline>
+          </svg>
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <p class="text-sm font-semibold text-gray-800 m-0">
+            TÉCNICO EN SISTEMAS
+          </p>
+          <p class="text-xs text-gray-500 m-0">Formación Técnica Profesional</p>
+        </div>
+      </div>
+
+
+
+  </div>
+</div>

@@ -1,0 +1,202 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import Github from "../icons/Github.astro";
+import PCF from "../icons/PCF.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Mail from "../icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import SuitCase from "../icons/SuitCase.astro";
+import Projects from "../components/Projects.astro";
+import Code from "../icons/Code.astro";
+import Certificaciones from "../components/Certificaciones.astro";
+import Skills from "../components/Skills.astro";
+import Footer from "../components/Footer.astro";
+import About from "../components/About.astro";
+import Test from "../components/Test.astro";
+import Contact from "../components/Contact.astro";
+import CertificadoIcon from "../icons/CertificadoIcon.astro";
+import AboutMeIcon from "../icons/AboutMeIcon.astro";
+import ContactIcon from "../icons/ContactIcon.astro";
+import Javascript from "../icons/Javascript.astro";
+import CsharpIcon from "../icons/csharIcon.astro";
+import ContexModelIcon from "../icons/ContexModelIcon.astro";
+import CopilotIcon from "../icons/CopilotIcon.astro";
+import GitHubCopilot from "../icons/GitHubCopilot.astro";
+import NetIcon from "../icons/NetIcon.astro";
+import JsonIcon from "../icons/JsonIcon.astro";
+import Azure from "../icons/Azure.astro";
+import SqlIcon from "../icons/SqlIcon.astro";
+import PostmanIcon from "../icons/PostmanIcon.astro";
+import MicrosoftIcon from "../icons/MicrosoftIcon.astro";
+import Sharepoint from "../icons/Sharepoint.astro";
+import SkillIcon from "../icons/SkillIcon.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout
+  title="Porfolio de Jeisson Triana"
+  description="Portafolio de Jeisson Triana Desarrollador PowerApps y Dynamics 365 LowCode"
+>
+  <!--Inicio -->
+  <main>
+    <SectionContainer class="py-44 pb-20">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hola Soy Jeisson Triana
+        <a
+          href="https://www.linkedin.com/in/jeisson-triana-09782268/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        Ingeniero de Sistemas con +6 años de experiencia en desarrollo de
+        soluciones empresariales Low Code, especializandome en Microsoft Power
+        Platform. Domino herramientas como Power Apps (Canvas y Model-Driven),
+        Power Automate, Power BI, y Power Virtual Agents/Copilot Studio,
+        integrándolas con Dynamics 365 CRM y servicios de Azure para crear
+        soluciones escalables y automatizadas.
+        <br /><br />
+        He liderado proyectos de diseño y desarrollo de aplicaciones personalizadas,
+        automatización de procesos de negocio, creación de componentes PCF, y conexión
+        con servicios externos mediante APIs REST. Mi incluye la configuración de
+        Dynamics 365 Customer Service, Sales y CRM, uso de Azure DevOps para despliegue
+        continuo, y desarrollo en C# y JavaScript dentro del ecosistema Microsoft...
+      </h2>
+      <nav class="flex gap-x-2 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/jeisson-triana/">
+          <LinkedIn class="w-6 h-6" /> LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/jeissontriana">
+          <Github class="w-6 h-6" /> GitHub
+        </SocialPill>
+        <SocialPill href="https://www.pcf.dev/">
+          <PCF class="w-6 h-6" /> PCF
+        </SocialPill>
+        <SocialPill href="https://www.pcf.dev/">
+          <Mail class="w-6 h-6" /> Jtriana659@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+  </main>
+  <!--Experiecia -->
+  <main>
+    <SectionContainer id="experiencia">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <SuitCase class="size=7" />
+        Experiencia Laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+  </main>
+  <!--Skills -->
+  <main class="w-full max-w-[1120px] mx-auto px-14">
+    <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <SkillIcon class="size=7" />
+        SKILL
+      </h2>
+    <SectionContainer class="items-center" />
+    <nav class="font-semibold mb-6 flex gap-x-2 items-center flex-wrap gap-x-2 gap-y-3">
+      <SocialPill href="#">
+        <Javascript class="w-6 h-6" /> JS
+      </SocialPill>
+      <SocialPill href="#">
+        <CsharpIcon class="w-6 h-6" /> C#
+      </SocialPill>
+      <SocialPill href="#">
+        <ContexModelIcon class="w-6 h-6" /> MCP
+      </SocialPill>
+      <SocialPill href="#">
+        <GitHubCopilot class="w-6 h-6" /> GIT
+      </SocialPill>
+      <SocialPill href="#">
+        <CopilotIcon class="w-6 h-6" /> CopilotStudio
+      </SocialPill>
+      <SocialPill href="#">
+        <NetIcon class="w-6 h-6" /> .NET
+      </SocialPill>
+      <SocialPill href="#">
+        <JsonIcon class="w-6 h-6" /> Json
+      </SocialPill>
+      <SocialPill href="#">
+        <Azure class="w-6 h-6" /> Az
+      </SocialPill>
+      <SocialPill href="#">
+        <SqlIcon class="w-6 h-6" /> SQL
+      </SocialPill>
+      <SocialPill href="#">
+        <PostmanIcon class="w-6 h-6" /> Postman
+      </SocialPill>
+      <SocialPill href="#">
+        <MicrosoftIcon class="w-6 h-6" /> Microsoft
+      </SocialPill>
+        <SocialPill href="#">
+        <Sharepoint class="w-6 h-6" /> MS
+      </SocialPill>
+      <SocialPill href="#">
+        <img class="w-6 h-6" src="/img/icons8-aplicaciones-microsoft-power-2020-48.png">PowerApps
+      </SocialPill>
+       <SocialPill href="#">
+        <img class="w-6 h-6" src="/img/icons8-microsoft-power-automate-2020-48.png">PowerAutome
+      </SocialPill>
+       <SocialPill href="#">
+        <img class="w-6 h-6" src="/img/icons8-power-bi-48.png">PBI
+      </SocialPill>
+       <SocialPill href="#">
+        <img class="w-6 h-6" src="img/icons8-base-de-datos-48.png">DataVerse
+      </SocialPill>
+      <SocialPill href="#">
+        <img class="w-6 h-6" src="/img/icons8-azure-devops-24.png">DevOps
+      </SocialPill>
+      
+    </nav>
+  </main>
+  <!--Proyectos -->
+  <main>
+    <SectionContainer id="proyectos">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <Code class="size=7" />
+        proyectos: Soluciones Reales
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+  <!--Certificados -->
+  <main>
+    <SectionContainer id="certificados">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <CertificadoIcon class="size=7" />
+        Mi Base de Conocimiento
+      </h2>
+      <Certificaciones />
+    </SectionContainer>
+  </main>
+  <!--SobreMi -->
+  <main>
+    <SectionContainer id="sobremi">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <AboutMeIcon class="size=7" />
+        Acerca de mi
+      </h2>
+      <About />
+    </SectionContainer>
+  </main>
+  <!--Contact -->
+  <main>
+    <SectionContainer id="contacto">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+        <ContactIcon class="size=7" />
+        Contáctame
+      </h2>
+      <Contact />
+    </SectionContainer>
+  </main>
+</Layout>

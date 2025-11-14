@@ -1,0 +1,57 @@
+---
+// Importa el archivo CSS que contiene las directivas de Tailwind
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description } = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <div
+      class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
+    </div>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  :root {
+    color-scheme: dark light; /* Habilita el soporte para temas claros y oscuros */
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #050505;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  @media (prefers-reduce-motion: reduce) {
+    body {
+      scroll-behavior: auto;
+    }
+  }
+</style>

@@ -1,0 +1,112 @@
+---
+/* Contact Page */
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-10 items-center">
+  <!-- COLUMNA IZQUIERDA (Texto + Iconos) -->
+  <div class="flex flex-col gap-6 text-neutral-300 max-w-md mx-auto">
+    <p class="leading-relaxed text-lg text-center md:text-left">
+      Si buscas un Ingeniero de Software que automatice, optimice y desarrolle
+      soluciones empresariales sólidas basadas en Microsoft Power Platform y
+      Azure, estoy listo para colaborar.
+    </p>
+
+    <!-- ICONOS -->
+    <div class="flex flex-col gap-4 text-base">
+      <!-- Email -->
+      <div class="flex items-center gap-3">
+        <span class="text-red-500 text-xl">📧</span>
+        <a
+          href="mailto:Jtriana659@gmail.com"
+          class="hover:text-red-500 transition"
+        >
+          Jtriana659@gmail.com
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="flex items-center gap-3">
+        <span class="text-red-500 text-xl">🔗</span>
+        <a
+          href="https://www.linkedin.com/in/jeisson-triana-09782268/"
+          target="_blank"
+          class="hover:text-red-500 transition"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="flex items-center gap-3">
+        <span class="text-red-500 text-xl">📞</span>
+        <span>320 508 7716</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMULARIO -->
+  <form
+    action="https://formsubmit.co/triana0121@gmail.com"
+    method="POST"
+    class="w-full max-w-xl bg-neutral-900 border border-neutral-700 p-8 rounded-2xl shadow-xl
+           backdrop-blur-md transition-all duration-300 hover:border-red-500 mx-auto"
+  >
+    <h2 class="text-3xl font-bold text-white mb-6 text-center">Contáctame</h2>
+
+    <div class="mb-3">
+      <label class="block text-neutral-300 mb-1 text-sm">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        required
+        class="w-full p-3 rounded-lg bg-neutral-800 text-neutral-200 border border-neutral-700
+               focus:outline-none focus:border-red-500 transition-all"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="block text-neutral-300 mb-1 text-sm">Correo</label>
+      <input
+        type="email"
+        name="email"
+        required
+        class="w-full p-3 rounded-lg bg-neutral-800 text-neutral-200 border border-neutral-700
+               focus:outline-none focus:border-red-500 transition-all"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="block text-neutral-300 mb-1 text-sm">Asunto</label>
+      <input
+        type="text"
+        name="subject"
+        required
+        class="w-full p-3 rounded-lg bg-neutral-800 text-neutral-200 border border-neutral-700
+               focus:outline-none focus:border-red-500 transition-all"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="block text-neutral-300 mb-1 text-sm">Mensaje</label>
+      <textarea
+        name="message"
+        required
+        rows="4"
+        class="w-full p-3 rounded-lg bg-neutral-800 text-neutral-200 border border-neutral-700
+               focus:outline-none focus:border-red-500 transition-all"
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full mt-4 py-3 rounded-lg bg-red-500 text-white font-semibold
+             transition-all duration-300 hover:bg-red-700 hover:scale-105"
+    >
+      Enviar mensaje
+    </button>
+
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_next" value="/" />
+  </form>
+</div>
