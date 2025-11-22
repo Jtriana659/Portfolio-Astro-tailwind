@@ -44,9 +44,11 @@ import SkillIcon from "../icons/SkillIcon.astro";
   description="Portafolio de Jeisson Triana Desarrollador PowerApps y Dynamics 365 LowCode"
 >
   <!--Inicio -->
-  <main>
+  <main class="px-4">
     <SectionContainer class="py-44 pb-20">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+      <h1
+        class="text-white text-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10"
+      >
         Hola Soy Jeisson Triana
         <a
           href="https://www.linkedin.com/in/jeisson-triana-09782268/"
@@ -57,7 +59,7 @@ import SkillIcon from "../icons/SkillIcon.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
+      <h2 class="text-white text-2xl text-xl opacity-90">
         Ingeniero de Sistemas con +6 años de experiencia en desarrollo de
         soluciones empresariales Low Code, especializandome en Microsoft Power
         Platform. Domino herramientas como Power Apps (Canvas y Model-Driven),
@@ -71,15 +73,12 @@ import SkillIcon from "../icons/SkillIcon.astro";
         Dynamics 365 Customer Service, Sales y CRM, uso de Azure DevOps para despliegue
         continuo, y desarrollo en C# y JavaScript dentro del ecosistema Microsoft...
       </h2>
-      <nav class="flex gap-x-2 mt-8">
+      <nav class="flex gap-x-2 mt-8 text-white">
         <SocialPill href="https://www.linkedin.com/in/jeisson-triana/">
           <LinkedIn class="w-6 h-6" /> LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/jeissontriana">
           <Github class="w-6 h-6" /> GitHub
-        </SocialPill>
-        <SocialPill href="https://www.pcf.dev/">
-          <PCF class="w-6 h-6" /> PCF
         </SocialPill>
         <SocialPill href="https://www.pcf.dev/">
           <Mail class="w-6 h-6" /> Jtriana659@gmail.com
@@ -88,9 +87,11 @@ import SkillIcon from "../icons/SkillIcon.astro";
     </SectionContainer>
   </main>
   <!--Experiecia -->
-  <main>
+  <main class="px-4">
     <SectionContainer id="experiencia">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+      <h2
+        class="text-white text-2xl font-semibold mb-6 flex gap-x-2 items-center"
+      >
         <SuitCase class="size=7" />
         Experiencia Laboral
       </h2>
@@ -98,13 +99,17 @@ import SkillIcon from "../icons/SkillIcon.astro";
     </SectionContainer>
   </main>
   <!--Skills -->
-  <main class="w-full max-w-[1120px] mx-auto px-14">
-    <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
-        <SkillIcon class="size=7" />
-        SKILL
-      </h2>
+  <main class="w-full max-w-[1120px] mx-auto px-14 text-white">
+    <h2
+      class="text-2xl text-white font-semibold mb-6 flex gap-x-2 items-center"
+    >
+      <SkillIcon class="size=7" />
+      SKILL
+    </h2>
     <SectionContainer class="items-center" />
-    <nav class="font-semibold mb-6 flex gap-x-2 items-center flex-wrap gap-x-2 gap-y-3">
+    <nav
+      class="font-semibold mb-6 flex gap-x-2 items-center flex-wrap gap-x-2 gap-y-3"
+    >
       <SocialPill href="#">
         <Javascript class="w-6 h-6" /> JS
       </SocialPill>
@@ -118,7 +123,7 @@ import SkillIcon from "../icons/SkillIcon.astro";
         <GitHubCopilot class="w-6 h-6" /> GIT
       </SocialPill>
       <SocialPill href="#">
-        <CopilotIcon class="w-6 h-6" /> CopilotStudio
+        <CopilotIcon class="w-6 h-6" /> Copilot/Studio
       </SocialPill>
       <SocialPill href="#">
         <NetIcon class="w-6 h-6" /> .NET
@@ -127,7 +132,7 @@ import SkillIcon from "../icons/SkillIcon.astro";
         <JsonIcon class="w-6 h-6" /> Json
       </SocialPill>
       <SocialPill href="#">
-        <Azure class="w-6 h-6" /> Az
+        <Azure class="w-6 h-6" /> Azure
       </SocialPill>
       <SocialPill href="#">
         <SqlIcon class="w-6 h-6" /> SQL
@@ -138,31 +143,38 @@ import SkillIcon from "../icons/SkillIcon.astro";
       <SocialPill href="#">
         <MicrosoftIcon class="w-6 h-6" /> Microsoft
       </SocialPill>
-        <SocialPill href="#">
-        <Sharepoint class="w-6 h-6" /> MS
+      <SocialPill href="#">
+        <Sharepoint class="w-6 h-6" /> Sharepoint
       </SocialPill>
       <SocialPill href="#">
-        <img class="w-6 h-6" src="/img/icons8-aplicaciones-microsoft-power-2020-48.png">PowerApps
-      </SocialPill>
-       <SocialPill href="#">
-        <img class="w-6 h-6" src="/img/icons8-microsoft-power-automate-2020-48.png">PowerAutome
-      </SocialPill>
-       <SocialPill href="#">
-        <img class="w-6 h-6" src="/img/icons8-power-bi-48.png">PBI
-      </SocialPill>
-       <SocialPill href="#">
-        <img class="w-6 h-6" src="img/icons8-base-de-datos-48.png">DataVerse
+        <img
+          class="w-6 h-6"
+          src="/img/icons8-aplicaciones-microsoft-power-2020-48.png"
+        />PowerApps
       </SocialPill>
       <SocialPill href="#">
-        <img class="w-6 h-6" src="/img/icons8-azure-devops-24.png">DevOps
+        <img
+          class="w-6 h-6"
+          src="/img/icons8-microsoft-power-automate-2020-48.png"
+        />PowerAutome
       </SocialPill>
-      
+      <SocialPill href="#">
+        <img class="w-6 h-6" src="/img/icons8-power-bi-48.png" />PBI
+      </SocialPill>
+      <SocialPill href="#">
+        <img class="w-6 h-6" src="img/icons8-base-de-datos-48.png" />DataVerse
+      </SocialPill>
+      <SocialPill href="#">
+        <img class="w-6 h-6" src="/img/icons8-azure-devops-24.png" />DevOps
+      </SocialPill>
     </nav>
   </main>
   <!--Proyectos -->
-  <main>
+  <main class="px-4">
     <SectionContainer id="proyectos">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+      <h2
+        class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white"
+      >
         <Code class="size=7" />
         proyectos: Soluciones Reales
       </h2>
@@ -170,19 +182,23 @@ import SkillIcon from "../icons/SkillIcon.astro";
     </SectionContainer>
   </main>
   <!--Certificados -->
-  <main>
+  <main class="px-4">
     <SectionContainer id="certificados">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+      <h2
+        class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white"
+      >
         <CertificadoIcon class="size=7" />
-        Mi Base de Conocimiento
+        Mi base de conociminetos
       </h2>
       <Certificaciones />
     </SectionContainer>
   </main>
   <!--SobreMi -->
-  <main>
+  <main class="px-4">
     <SectionContainer id="sobremi">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+      <h2
+        class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white"
+      >
         <AboutMeIcon class="size=7" />
         Acerca de mi
       </h2>
@@ -190,9 +206,11 @@ import SkillIcon from "../icons/SkillIcon.astro";
     </SectionContainer>
   </main>
   <!--Contact -->
-  <main>
+  <main class="px-4">
     <SectionContainer id="contacto">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+      <h2
+        class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white"
+      >
         <ContactIcon class="size=7" />
         Contáctame
       </h2>
